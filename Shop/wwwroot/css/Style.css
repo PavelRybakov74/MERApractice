@@ -1,0 +1,38 @@
+﻿body {
+    background: #e0ffff;
+}
+
+.img-thumbnail {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    float: left;
+}
+
+.obj-container {
+    margin-top: 30px;
+    width: 800px;
+    height: 200px;
+}
+
+    .obj-container:hover {
+        background: #d0ffff;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px 0 #0000001a;
+    }
+
+.container {
+    margin-top: 80px;
+}
+
+.nav-catalog-list {
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.text {
+    display: inline-block;
+    margin-left: 20px;
+    line-height: 150%;
+    width: 460px;
+}
