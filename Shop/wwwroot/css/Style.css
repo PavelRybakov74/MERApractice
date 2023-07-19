@@ -2,11 +2,8 @@
     background: #e0ffff;
 }
 
-.img-thumbnail {
-    width: 300px;
-    height: 200px;
-    object-fit: contain;
-    float: left;
+.container {
+    margin-top: 80px;
 }
 
 .obj-container {
@@ -21,13 +18,11 @@
         box-shadow: 0 5px 20px 0 #0000001a;
     }
 
-.container {
-    margin-top: 80px;
-}
-
-.nav-catalog-list {
-    margin-top: 80px;
-    margin-left: 20px;
+.img-thumbnail {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    float: left;
 }
 
 .text {
@@ -35,4 +30,22 @@
     margin-left: 20px;
     line-height: 150%;
     width: 460px;
+}
+
+.itemcontainer {
+    margin-top: 30px;
+}
+
+.itemimg {
+    width: 45%;
+    object-fit: contain;
+    float: left;
+    max-height: 500px;
+}
+
+.itemtxt {
+    margin-left: 10%;
+    display: inline-block;
+    line-height: 150%;
+    width: 45%;
 }

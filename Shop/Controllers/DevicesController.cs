@@ -26,7 +26,7 @@ namespace Shop.Controllers
         {
             ViewBag.Title = name;
             DeviceViewModel model = new DeviceViewModel();
-            if (string.IsNullOrWhiteSpace(name))
+            if (!string.IsNullOrWhiteSpace(name))
             {
                 model.device = await _deviceRepository.GetDevice(name);
             }

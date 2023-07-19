@@ -24,9 +24,10 @@ namespace Shop.Data.Models
         [BsonElement("category")]
         public string category { get; set; }
 
-        /*public static implicit operator List<object>(Device v)
-        {
-            throw new NotImplementedException();
-        }*/
+        [BsonElement("info")]
+        public string info { get; set; }
+
+        [BsonElement("table")]
+        public string[][] table { get; set; }
     }
 }

@@ -1,6 +1,27 @@
-﻿<img class="img-thumbnail" src="@Model.device.img" alt="@Model.device.name" />
-    <div class="text">
-        <h2>@Model.device.name</h2>
-        <p>@Model.device.shortDesc</p>
-        <p>Цена: @Model.device.price.ToString("c")</p>
-    </div>
+﻿
+<h1>@Model.device.name</h1>
+<h2>@Model.device.shortDesc</h2>
+
+<div class="itemcontainer">
+
+        <img class="itemimg" src="@Model.device.img" alt="@Model.device.name" />
+
+        <div class="itemtxt">
+
+        <table class="table">
+            <tbody>
+                @foreach (var row in Model.device.table)
+                {
+                    <tr>
+                        @foreach (var item in row)
+                        {
+                            <td>@item</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+            
+        <p>@Model.device.info</p>
+        </div>
+</div>
