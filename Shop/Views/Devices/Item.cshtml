@@ -1,6 +1,5 @@
-﻿
-<h1>@Model.device.name</h1>
-<h2>@Model.device.shortDesc</h2>
+﻿<h1>@Model.device.name</h1>
+<h2><span style="font-weight:normal;">@Model.device.shortDesc</span></h2>
 
 <div class="itemcontainer">
 
@@ -13,15 +12,21 @@
                 @foreach (var row in Model.device.table)
                 {
                     <tr>
-                        @foreach (var item in row)
+                        @foreach (var col in row)
                         {
-                            <td>@item</td>
+                            <th>
+                            @foreach (var i in col)
+                            {
+                                @i<br>
+                            }
+                            </th>
                         }
                     </tr>
                 }
             </tbody>
         </table>
-            
-        <p>@Model.device.info</p>
+        @foreach (var it in Model.device.info){
+            <p>@it</p>
+        }
         </div>
 </div>
