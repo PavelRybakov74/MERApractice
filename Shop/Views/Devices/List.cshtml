@@ -1,8 +1,9 @@
 ﻿@{
     foreach (var device in Model.allDevices)
     {
-        <a class="nav-link" href="/api/devices/@device.category/@device.name">
-        <div class="obj-container">
+
+        <div class="obj-container" href="/api/devices/@device.category/@device.name">
+            <a class="nav-link" href="/api/devices/@device.category/@device.name">
 
             <img class="img-thumbnail" src="@device.img" alt="@device.name" />
 
@@ -11,8 +12,8 @@
                 <p>@device.shortDesc</p>
                 <p>Цена: @device.price.ToString("c")</p>
             </div>
-
+            </a>
         </div>
-        </a>
+        
     }
 }

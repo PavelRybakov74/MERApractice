@@ -25,9 +25,9 @@ namespace Shop.Data.Models
         public string category { get; set; }
 
         [BsonElement("info")]
-        public string info { get; set; }
+        public string[] info { get; set; }
 
         [BsonElement("table")]
-        public string[][] table { get; set; }
+        public string[][][] table { get; set; }
     }
 }

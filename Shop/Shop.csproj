@@ -1,27 +1,68 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c1f94450-2a04-4705-bbd7-e24933802060</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="wwwroot\img\**" />
-    <Content Remove="wwwroot\img\**" />
-    <EmbeddedResource Remove="wwwroot\img\**" />
-    <None Remove="wwwroot\img\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
     <PackageReference Include="MongoDB.Driver" Version="2.20.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\mera\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\mera\MC-114.png" />
+    <None Include="wwwroot\mera\MC-114C.png" />
+    <None Include="wwwroot\mera\MC-201.png" />
+    <None Include="wwwroot\mera\MC-212.png" />
+    <None Include="wwwroot\mera\MC-227C.png" />
+    <None Include="wwwroot\mera\MC-227K.png" />
+    <None Include="wwwroot\mera\MC-227K11.png" />
+    <None Include="wwwroot\mera\MC-227R.png" />
+    <None Include="wwwroot\mera\MC-227U.png" />
+    <None Include="wwwroot\mera\MC-227UP.png" />
+    <None Include="wwwroot\mera\MC-451.png" />
+    <None Include="wwwroot\mera\ME-230.png" />
+    <None Include="wwwroot\mera\ME-320.png" />
+    <None Include="wwwroot\mera\ME-340.png" />
+    <None Include="wwwroot\mera\MIC-355M.png" />
+    <None Include="wwwroot\mera\MIC-356.png" />
+    <None Include="wwwroot\mera\MIC-552.png" />
+    <None Include="wwwroot\mera\MIC-553.png" />
+    <None Include="wwwroot\mera\MR-114.png" />
+    <None Include="wwwroot\mera\MR-202.png" />
+    <None Include="wwwroot\mera\MR-212.png" />
+    <None Include="wwwroot\mera\MR-227C.png" />
+    <None Include="wwwroot\mera\MR-227K.png" />
+    <None Include="wwwroot\mera\MR-227R.png" />
+    <None Include="wwwroot\mera\MR-227U.png" />
+    <None Include="wwwroot\mera\MR-227UP.png" />
+    <None Include="wwwroot\mera\MR-451.png" />
+    <None Include="wwwroot\mera\MR-452.png" />
+    <None Include="wwwroot\mera\MS-142.png" />
+    <None Include="wwwroot\mera\MS-152.png" />
+    <None Include="wwwroot\mera\MS-202.png" />
+    <None Include="wwwroot\mera\MS-304.png" />
+    <None Include="wwwroot\mera\MS-340.png" />
+    <None Include="wwwroot\mera\MS-451.png" />
+    <None Include="wwwroot\mera\MX-132.png" />
+    <None Include="wwwroot\mera\MX-224.png" />
+    <None Include="wwwroot\mera\MX-240.png" />
+    <None Include="wwwroot\mera\MX-310.png" />
+    <None Include="wwwroot\mera\MX-340.png" />
+    <None Include="wwwroot\mera\MX-416.png" />
   </ItemGroup>
 
 </Project>

@@ -17,7 +17,7 @@ namespace Shop
 
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("Properties/appsettings.json")
+                .AddJsonFile("appsettings.json")
                 .Build();
 
             services.Configure<Settings>(options =>
@@ -30,8 +30,9 @@ namespace Shop
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) { 
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
-            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+            app.UseStaticFiles();
+
 
             app.Run(async (context) => {
                 await context.Response.WriteAsync("Hello");
