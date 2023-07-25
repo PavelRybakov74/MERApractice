@@ -22,11 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="wwwroot\css\Style.css" />
-=======
-    <None Include="wwwroot\css\style.css" />
->>>>>>> e80e423e065f1e96db9c75b30a6d5102c5026cf0
     <None Include="wwwroot\mera\MC-114.png" />
     <None Include="wwwroot\mera\MC-114C.png" />
     <None Include="wwwroot\mera\MC-201.png" />
